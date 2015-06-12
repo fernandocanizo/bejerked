@@ -1,5 +1,5 @@
 "use strict";
-
+/* global bejerked */
 
 bejerked.game = (function () {
 	// convenience assignments
@@ -9,7 +9,7 @@ bejerked.game = (function () {
 	function showScreen(screenId) {
 		// hide active screen and show specified screen
 
-		var activeScreen = $('#game .screen .active')[0];
+		var activeScreen = $('#game .screen.active')[0];
 		var screen = $('#' + screenId)[0];
 
 		if(activeScreen) {
