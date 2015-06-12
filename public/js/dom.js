@@ -23,9 +23,9 @@ bejerked.dom = (function () {
 
 
 	function removeClass(element, className) {
-		var regex = new RegExp("(^|\\s)" + className + "(\\s|$)");
+		var regex = new RegExp("((^|\\s)" + className + "(\\s|$))");
 
-		element.className.replace(regex, " ");
+		element.className = element.className.replace(regex, "");
 	}
 
 
