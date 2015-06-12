@@ -1,9 +1,6 @@
 "use strict";
 
 
-// TODO remove this when I get Modernizr
-var bejerked = {};
-
 bejerked.game = (function () {
 	// convenience assignments
 	var dom = bejerked.dom;
